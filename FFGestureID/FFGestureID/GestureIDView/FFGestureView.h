@@ -10,8 +10,6 @@
 
 @protocol FFGestureViewDelegate <NSObject>
 
-//- (void)handlePasswordResult:()type;
-
 @end
 
 @interface FFGestureView : UIView

@@ -22,17 +22,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor=[UIColor orangeColor];
+    self.view.backgroundColor=[UIColor whiteColor];
     
     double gap=50,w=kMainScreen_Width-2*gap;
     double y=64+(kMainScreen_Height-64-w)/2;
     
     FFGestureView *gestureView=[[FFGestureView alloc]init];
     gestureView.width=w;
-    
     gestureView.frame=CGRectMake(gap, y, w, w);
     [self.view addSubview:gestureView];
-
 }
 
 @end
