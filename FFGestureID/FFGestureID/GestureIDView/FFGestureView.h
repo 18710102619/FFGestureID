@@ -18,6 +18,5 @@
 
 @property(nonatomic,assign)id<FFGestureViewDelegate> delegate;
 @property(nonatomic,assign)double width;
-//@property(nonatomic,assign)TCPasswordHandle passwordHandle;
 
 @end

@@ -26,7 +26,7 @@
     self = [super init];
     if (self) {
         self.userInteractionEnabled=YES;
-        self.backgroundColor=[UIColor clearColor];
+        self.backgroundColor=[UIColor whiteColor];
         self.selectedCodes=[NSMutableArray array];
         self.success=YES;
     }
@@ -128,6 +128,9 @@
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    NSString *password=[self getPassword];
+    NSLog(@"密码：%@",password);
+    
     for (FFCodeView *code in _selectedCodes) {
         code.success=_success;
         [code setNeedsDisplay];
